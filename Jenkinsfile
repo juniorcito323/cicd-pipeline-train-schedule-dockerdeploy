@@ -14,7 +14,7 @@ pipeline {
             }
             steps {
                 script {
-                    app = docker.build("juniorcito323/train-schedule")
+                    app = docker.build("juniorcito2/train-schedule")
                     app.inside {
                         sh 'echo $(curl localhost:8080)'
                     }
